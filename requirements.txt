@@ -1,0 +1,17 @@
+# Core
+anthropic
+pydantic>=2
+python-dotenv
+langgraph
+langgraph-checkpoint-sqlite   # Day 9 durable human-in-the-loop
+
+# RAG (Day 6) - local embeddings backend (default)
+sentence-transformers
+numpy
+
+# RAG (Day 6) - API embeddings backend (only if EMBEDDINGS=voyage)
+# voyageai
+
+# Dashboard (Days 11-13)
+streamlit
+# pandas

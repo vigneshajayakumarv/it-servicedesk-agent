@@ -1,0 +1,260 @@
+[
+  {
+    "id": "EM-2001",
+    "sender": "grace.owusu@northwind.example",
+    "subject": "Forgot my password",
+    "body": "Hi, forgot my password again over the weekend and now I'm locked out after a couple of tries. Can you reset it? Thanks.",
+    "expected_category": "password_reset",
+    "difficulty": "clear"
+  },
+  {
+    "id": "EM-2002",
+    "sender": "liam.wright@northwind.example",
+    "subject": "VPN won't connect from home",
+    "body": "The VPN client keeps failing to connect from home this morning, error says 'authentication failed'. I've restarted the laptop and the app. Office network is fine.",
+    "expected_category": "vpn_network",
+    "difficulty": "clear"
+  },
+  {
+    "id": "EM-2003",
+    "sender": "sofia.marin@northwind.example",
+    "subject": "Laptop won't turn on",
+    "body": "My laptop is completely dead, no lights at all even when plugged into the charger. It's the Dell Latitude I got last year. Tried a different socket, nothing.",
+    "expected_category": "hardware",
+    "difficulty": "clear"
+  },
+  {
+    "id": "EM-2004",
+    "sender": "noah.klein@northwind.example",
+    "subject": "Outlook not syncing",
+    "body": "Outlook stopped pulling new mail around 8am, nothing new in my inbox since then. Webmail in the browser works fine and shows the missing emails.",
+    "expected_category": "email_issue",
+    "difficulty": "clear"
+  },
+  {
+    "id": "EM-2005",
+    "sender": "amara.diallo@northwind.example",
+    "subject": "Access to Finance shared drive",
+    "body": "Could you please grant me access to the Finance shared drive? I need it for month-end close. My manager is Anil Rao if you need sign-off.",
+    "expected_category": "access_request",
+    "difficulty": "clear"
+  },
+  {
+    "id": "EM-2006",
+    "sender": "victor.silva@northwind.example",
+    "subject": "Suspicious email - reporting",
+    "body": "Forwarding an email I got that's asking me to verify my login details through a link. Looks like a scam. I have NOT clicked anything. Can you confirm?",
+    "expected_category": "security_concern",
+    "difficulty": "clear"
+  },
+  {
+    "id": "EM-2007",
+    "sender": "hana.suzuki@northwind.example",
+    "subject": "Setting up Authenticator",
+    "body": "How do I set up the Microsoft Authenticator app for MFA on my new phone? Is there a guide? Thanks in advance.",
+    "expected_category": "howto_question",
+    "difficulty": "clear"
+  },
+  {
+    "id": "EM-2008",
+    "sender": "kwame.boateng@northwind.example",
+    "subject": "New starter Monday",
+    "body": "New hire Jason Mbeki starts this Monday. He'll need a laptop, an email account, and Teams access set up before he arrives. He reports to me.",
+    "expected_category": "onboarding_offboarding",
+    "difficulty": "clear"
+  },
+  {
+    "id": "EM-2009",
+    "sender": "elena.popov@northwind.example",
+    "subject": "Lost phone with authenticator",
+    "body": "I lost my phone which had the authenticator app on it, so I can't get past MFA to log in. I think I need my MFA reset so I can re-enroll on my replacement phone.",
+    "expected_category": "password_reset",
+    "difficulty": "clear"
+  },
+  {
+    "id": "EM-2010",
+    "sender": "marco.rossi@northwind.example",
+    "subject": "Monitor flickering",
+    "body": "My external monitor keeps flickering and going black every few minutes then coming back. I've reseated the cable and swapped the port, no change.",
+    "expected_category": "hardware",
+    "difficulty": "clear"
+  },
+  {
+    "id": "EM-2011",
+    "sender": "yuki.tanaka@northwind.example",
+    "subject": "Installing Zoom",
+    "body": "What's the process to get Zoom installed on my work laptop? I don't have admin rights so I can't do it myself.",
+    "expected_category": "howto_question",
+    "difficulty": "clear"
+  },
+  {
+    "id": "EM-2012",
+    "sender": "fatima.zahra@northwind.example",
+    "subject": "Conference room wifi down",
+    "body": "The wifi in the 4th floor conference room is down - the whole team is here for a meeting and none of us can connect. Everywhere else seems fine.",
+    "expected_category": "vpn_network",
+    "difficulty": "clear"
+  },
+  {
+    "id": "EM-2013",
+    "sender": "daniel.hughes@northwind.example",
+    "subject": "Can't send emails from home",
+    "body": "When I work from home my emails just sit in the outbox and won't send. It's fine when I'm in the office. I'm on my usual laptop. Not sure what's going on.",
+    "expected_category": "email_issue",
+    "difficulty": "ambiguous",
+    "note": "Symptom is email, but root cause could be VPN or connectivity - plausibly vpn_network or email_issue."
+  },
+  {
+    "id": "EM-2014",
+    "sender": "olivia.brown@northwind.example",
+    "subject": "Computer acting weird",
+    "body": "Hey, my computer's been acting really weird the last few days. Can someone take a look when you get a chance? Thanks.",
+    "expected_category": "other",
+    "difficulty": "ambiguous",
+    "note": "No concrete symptom given - genuinely underspecified, should read as low confidence."
+  },
+  {
+    "id": "EM-2015",
+    "sender": "ahmed.hassan@northwind.example",
+    "subject": "Slow laptop and folder access",
+    "body": "Two things really - my laptop has been painfully slow all week, AND I can't open the finance shared folder anymore, it says access denied. Both are driving me up the wall.",
+    "expected_category": "hardware",
+    "difficulty": "ambiguous",
+    "note": "Two distinct issues in one email (hardware + access_request) - forces the model to pick one."
+  },
+  {
+    "id": "EM-2016",
+    "sender": "chloe.martin@northwind.example",
+    "subject": "Can't get into the CRM",
+    "body": "How do I get into the CRM? I go to the login page and it just won't let me in. Not sure if I'm doing something wrong or if I don't have an account.",
+    "expected_category": "access_request",
+    "difficulty": "ambiguous",
+    "note": "Unclear whether they lack access (access_request) or lack knowledge (howto_question)."
+  },
+  {
+    "id": "EM-2017",
+    "sender": "sam.okoro@northwind.example",
+    "subject": "Getting loads of weird emails",
+    "body": "I've been getting tons of weird emails the last few days, like 20 a day from names I don't recognise. Is something wrong with my account?",
+    "expected_category": "security_concern",
+    "difficulty": "ambiguous",
+    "note": "Could be ordinary spam (email_issue) or a phishing/compromise signal (security_concern)."
+  },
+  {
+    "id": "EM-2018",
+    "sender": "isabella.ferrari@northwind.example",
+    "subject": "Everything is slow",
+    "body": "The internet is super slow on my machine today, pages take forever to load. Not sure if it's just me, the office network, or something else.",
+    "expected_category": "vpn_network",
+    "difficulty": "ambiguous",
+    "note": "Could be network (vpn_network), a hardware issue on the machine, or an external ISP problem."
+  },
+  {
+    "id": "EM-2019",
+    "sender": "george.papadopoulos@northwind.example",
+    "subject": "Not authorized in payroll app",
+    "body": "I can log into my computer completely fine, but when I open the payroll app it says 'not authorized'. What gives? I had it last month.",
+    "expected_category": "access_request",
+    "difficulty": "ambiguous",
+    "note": "Phrased around logging in, but it's actually an app permission issue - risks being read as password_reset."
+  },
+  {
+    "id": "EM-2020",
+    "sender": "mia.johansson@northwind.example",
+    "subject": "URGENT need help",
+    "body": "URGENT!! Nothing is working and I have a deadline in an hour. Please someone call me right away.",
+    "expected_category": "other",
+    "difficulty": "ambiguous",
+    "note": "High urgency, zero diagnostic detail - impossible to categorize confidently."
+  },
+  {
+    "id": "EM-2021",
+    "sender": "lucas.oliveira@northwind.example",
+    "subject": "Contractor joining design project",
+    "body": "We've got a contractor, Dana Feld, joining the design project for the next 3 months. She'll need access to the Figma files and the brand assets drive to get started.",
+    "expected_category": "onboarding_offboarding",
+    "difficulty": "ambiguous",
+    "note": "Sits between onboarding (new person setup) and access_request (specific resources)."
+  },
+  {
+    "id": "EM-2022",
+    "sender": "priya.menon@northwind.example",
+    "subject": "Printer jammed again",
+    "body": "The printer on the 3rd floor is jammed again, third time this week. Can someone come and sort it out? It's holding everyone up.",
+    "expected_category": "hardware",
+    "difficulty": "ambiguous",
+    "note": "Could be hardware (device fault) or a facilities/other matter depending on how IT scopes printers."
+  },
+  {
+    "id": "EM-2023",
+    "sender": "tomas.novak@northwind.example",
+    "subject": "Out of office reply",
+    "body": "How do I set an out-of-office auto-reply on my email? I'm going on leave from Friday and want it on before I go.",
+    "expected_category": "howto_question",
+    "difficulty": "ambiguous",
+    "note": "A how-to, but tightly coupled to email - could be misread as email_issue."
+  },
+  {
+    "id": "EM-2024",
+    "sender": "aisha.rahman@northwind.example",
+    "subject": "Did I get hacked?",
+    "body": "A colleague told me they got a strange message 'from me' that I definitely never sent. Did my account get hacked, or is it just spam using my name?",
+    "expected_category": "security_concern",
+    "difficulty": "ambiguous",
+    "note": "Possible account compromise (security_concern) vs spoofing/spam - vague evidence."
+  },
+  {
+    "id": "EM-2025",
+    "sender": "ben.carter@northwind.example",
+    "subject": "Clicked something I shouldn't have",
+    "body": "I think I messed up. I clicked a link in an email and now there's a new toolbar in my browser that I definitely didn't install. Is that bad? What should I do?",
+    "expected_category": "security_concern",
+    "difficulty": "edge",
+    "note": "High-stakes compromise, but surface symptoms (browser toolbar) could be misread as hardware or howto."
+  },
+  {
+    "id": "EM-2026",
+    "sender": "helen.zhao@northwind.example",
+    "subject": "Disable Sarah's access",
+    "body": "Sarah Cole left the company last Friday. Please disable her email and system access when you get a chance - want to make sure everything's tidied up.",
+    "expected_category": "onboarding_offboarding",
+    "difficulty": "edge",
+    "note": "Offboarding with a security dimension (deprovisioning) - must route to a human."
+  },
+  {
+    "id": "EM-2027",
+    "sender": "raj.kapoor@northwind.example",
+    "subject": "admin on billing",
+    "body": "quick one - can you just make me an admin on the billing system so I can sort invoices myself? saves going back and forth. cheers",
+    "expected_category": "access_request",
+    "difficulty": "edge",
+    "note": "Casual tone hides a high-privilege admin grant - the gate must still send it for approval."
+  },
+  {
+    "id": "EM-2028",
+    "sender": "nadia.haddad@northwind.example",
+    "subject": "VPN dropping AGAIN",
+    "body": "This is the THIRD time this week the VPN has dropped on me in the middle of a client call. I am losing clients here. This needs to be fixed properly, not another restart.",
+    "expected_category": "vpn_network",
+    "difficulty": "edge",
+    "note": "Emotionally charged - tests that tone/urgency doesn't shift the category away from vpn_network."
+  },
+  {
+    "id": "EM-2029",
+    "sender": "peter.andersson@northwind.example",
+    "subject": "Office open on the holiday?",
+    "body": "Is the office open on the public holiday next Thursday, or are we all working remotely that day? Wasn't sure who to ask.",
+    "expected_category": "other",
+    "difficulty": "edge",
+    "note": "Not an IT request at all - misdirected to the helpdesk. Should land as other."
+  },
+  {
+    "id": "EM-2030",
+    "sender": "laura.giordano@northwind.example",
+    "subject": "Sent salary sheet to wrong list",
+    "body": "I've just realised I emailed the staff salary spreadsheet to the wrong distribution list by mistake. What do I do?? Can it be recalled? Please help, this is urgent.",
+    "expected_category": "security_concern",
+    "difficulty": "edge",
+    "note": "Data exposure incident - high-stakes, urgent, must route to a human even though the user is asking 'how do I recall'."
+  }
+]

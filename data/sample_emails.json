@@ -1,0 +1,32 @@
+[
+  {
+    "id": "EM-1001",
+    "sender": "rita.fernandes@northwind.example",
+    "subject": "Locked out of my account",
+    "body": "Hi, I tried logging in a few times this morning and now my account is locked. Can you reset it? I have a client call at 11. Thanks, Rita (employee #4471)."
+  },
+  {
+    "id": "EM-1002",
+    "sender": "tom.becker@northwind.example",
+    "subject": "VPN keeps dropping",
+    "body": "Working from home today and the VPN disconnects every 10 minutes or so. Wifi is fine for everything else. Using the company laptop. Any ideas?"
+  },
+  {
+    "id": "EM-1003",
+    "sender": "priya.nair@northwind.example",
+    "subject": "Is this email legit??",
+    "body": "I got an email from 'IT Helpdesk' asking me to confirm my password via a link. Looks a bit off. I haven't clicked anything. Forwarding it to you - is it real?"
+  },
+  {
+    "id": "EM-1004",
+    "sender": "daniel.osei@northwind.example",
+    "subject": "Need access to the Figma team",
+    "body": "Starting on the new website project. Could you add me to the design team's Figma workspace? My manager is Sarah Cole if you need approval."
+  },
+  {
+    "id": "EM-1005",
+    "sender": "mei.lin@northwind.example",
+    "subject": "How do I set up email on my iPhone?",
+    "body": "Just got a new phone. What are the steps to add my work email to the iPhone Mail app? Thanks!"
+  }
+]

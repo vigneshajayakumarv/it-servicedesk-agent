@@ -1,0 +1,293 @@
+{
+  "accuracy": 0.9,
+  "total": 30,
+  "correct": 27,
+  "by_difficulty": {
+    "clear": {
+      "total": 12,
+      "correct": 12
+    },
+    "ambiguous": {
+      "total": 12,
+      "correct": 9
+    },
+    "edge": {
+      "total": 6,
+      "correct": 6
+    }
+  },
+  "low_confidence": 8,
+  "generated_at": "2026-07-04T17:53:46.859439+00:00",
+  "rows": [
+    {
+      "id": "EM-2001",
+      "difficulty": "clear",
+      "expected": "password_reset",
+      "predicted": "password_reset",
+      "confidence": 0.99,
+      "route": "auto",
+      "correct": true
+    },
+    {
+      "id": "EM-2002",
+      "difficulty": "clear",
+      "expected": "vpn_network",
+      "predicted": "vpn_network",
+      "confidence": 0.92,
+      "route": "auto",
+      "correct": true
+    },
+    {
+      "id": "EM-2003",
+      "difficulty": "clear",
+      "expected": "hardware",
+      "predicted": "hardware",
+      "confidence": 0.97,
+      "route": "auto",
+      "correct": true
+    },
+    {
+      "id": "EM-2004",
+      "difficulty": "clear",
+      "expected": "email_issue",
+      "predicted": "email_issue",
+      "confidence": 0.92,
+      "route": "auto",
+      "correct": true
+    },
+    {
+      "id": "EM-2005",
+      "difficulty": "clear",
+      "expected": "access_request",
+      "predicted": "access_request",
+      "confidence": 0.98,
+      "route": "human",
+      "correct": true
+    },
+    {
+      "id": "EM-2006",
+      "difficulty": "clear",
+      "expected": "security_concern",
+      "predicted": "security_concern",
+      "confidence": 0.99,
+      "route": "human",
+      "correct": true
+    },
+    {
+      "id": "EM-2007",
+      "difficulty": "clear",
+      "expected": "howto_question",
+      "predicted": "howto_question",
+      "confidence": 0.85,
+      "route": "auto",
+      "correct": true
+    },
+    {
+      "id": "EM-2008",
+      "difficulty": "clear",
+      "expected": "onboarding_offboarding",
+      "predicted": "onboarding_offboarding",
+      "confidence": 0.98,
+      "route": "human",
+      "correct": true
+    },
+    {
+      "id": "EM-2009",
+      "difficulty": "clear",
+      "expected": "password_reset",
+      "predicted": "password_reset",
+      "confidence": 0.97,
+      "route": "auto",
+      "correct": true
+    },
+    {
+      "id": "EM-2010",
+      "difficulty": "clear",
+      "expected": "hardware",
+      "predicted": "hardware",
+      "confidence": 0.97,
+      "route": "auto",
+      "correct": true
+    },
+    {
+      "id": "EM-2011",
+      "difficulty": "clear",
+      "expected": "howto_question",
+      "predicted": "howto_question",
+      "confidence": 0.72,
+      "route": "human",
+      "correct": true
+    },
+    {
+      "id": "EM-2012",
+      "difficulty": "clear",
+      "expected": "vpn_network",
+      "predicted": "vpn_network",
+      "confidence": 0.93,
+      "route": "auto",
+      "correct": true
+    },
+    {
+      "id": "EM-2013",
+      "difficulty": "ambiguous",
+      "expected": "email_issue",
+      "predicted": "vpn_network",
+      "confidence": 0.65,
+      "route": "human",
+      "correct": false
+    },
+    {
+      "id": "EM-2014",
+      "difficulty": "ambiguous",
+      "expected": "other",
+      "predicted": "hardware",
+      "confidence": 0.55,
+      "route": "human",
+      "correct": false
+    },
+    {
+      "id": "EM-2015",
+      "difficulty": "ambiguous",
+      "expected": "hardware",
+      "predicted": "hardware",
+      "confidence": 0.52,
+      "route": "human",
+      "correct": true
+    },
+    {
+      "id": "EM-2016",
+      "difficulty": "ambiguous",
+      "expected": "access_request",
+      "predicted": "access_request",
+      "confidence": 0.55,
+      "route": "human",
+      "correct": true
+    },
+    {
+      "id": "EM-2017",
+      "difficulty": "ambiguous",
+      "expected": "security_concern",
+      "predicted": "security_concern",
+      "confidence": 0.72,
+      "route": "human",
+      "correct": true
+    },
+    {
+      "id": "EM-2018",
+      "difficulty": "ambiguous",
+      "expected": "vpn_network",
+      "predicted": "vpn_network",
+      "confidence": 0.72,
+      "route": "human",
+      "correct": true
+    },
+    {
+      "id": "EM-2019",
+      "difficulty": "ambiguous",
+      "expected": "access_request",
+      "predicted": "access_request",
+      "confidence": 0.88,
+      "route": "human",
+      "correct": true
+    },
+    {
+      "id": "EM-2020",
+      "difficulty": "ambiguous",
+      "expected": "other",
+      "predicted": "other",
+      "confidence": 0.4,
+      "route": "human",
+      "correct": true
+    },
+    {
+      "id": "EM-2021",
+      "difficulty": "ambiguous",
+      "expected": "onboarding_offboarding",
+      "predicted": "access_request",
+      "confidence": 0.95,
+      "route": "human",
+      "correct": false
+    },
+    {
+      "id": "EM-2022",
+      "difficulty": "ambiguous",
+      "expected": "hardware",
+      "predicted": "hardware",
+      "confidence": 0.97,
+      "route": "auto",
+      "correct": true
+    },
+    {
+      "id": "EM-2023",
+      "difficulty": "ambiguous",
+      "expected": "howto_question",
+      "predicted": "howto_question",
+      "confidence": 0.97,
+      "route": "auto",
+      "correct": true
+    },
+    {
+      "id": "EM-2024",
+      "difficulty": "ambiguous",
+      "expected": "security_concern",
+      "predicted": "security_concern",
+      "confidence": 0.87,
+      "route": "human",
+      "correct": true
+    },
+    {
+      "id": "EM-2025",
+      "difficulty": "edge",
+      "expected": "security_concern",
+      "predicted": "security_concern",
+      "confidence": 0.95,
+      "route": "human",
+      "correct": true
+    },
+    {
+      "id": "EM-2026",
+      "difficulty": "edge",
+      "expected": "onboarding_offboarding",
+      "predicted": "onboarding_offboarding",
+      "confidence": 0.98,
+      "route": "human",
+      "correct": true
+    },
+    {
+      "id": "EM-2027",
+      "difficulty": "edge",
+      "expected": "access_request",
+      "predicted": "access_request",
+      "confidence": 0.95,
+      "route": "human",
+      "correct": true
+    },
+    {
+      "id": "EM-2028",
+      "difficulty": "edge",
+      "expected": "vpn_network",
+      "predicted": "vpn_network",
+      "confidence": 0.98,
+      "route": "auto",
+      "correct": true
+    },
+    {
+      "id": "EM-2029",
+      "difficulty": "edge",
+      "expected": "other",
+      "predicted": "other",
+      "confidence": 0.95,
+      "route": "auto",
+      "correct": true
+    },
+    {
+      "id": "EM-2030",
+      "difficulty": "edge",
+      "expected": "security_concern",
+      "predicted": "security_concern",
+      "confidence": 0.93,
+      "route": "human",
+      "correct": true
+    }
+  ]
+}
