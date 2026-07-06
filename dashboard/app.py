@@ -47,13 +47,38 @@ def _run_demo_inbox():
             done += 1
     return done, paused
 
+def _reset_demo_state():
+    """Wipe runtime data (audit, tickets, checkpoints, queue, outbox) for a fresh demo."""
+    import shutil
+    from servicedesk.audit import DB as AUDIT_DB
+    from servicedesk.checkpoint import DB as CKPT_DB
+    from servicedesk.queue_index import INDEX as QUEUE_FILE
+    from servicedesk.tools.actions import OUTBOX
+    for f in (AUDIT_DB, CKPT_DB, QUEUE_FILE, TICKETS_DB):
+        try:
+            os.remove(f)
+        except FileNotFoundError:
+            pass
+    shutil.rmtree(OUTBOX, ignore_errors=True)
+
+
+# Demo control: cloud instances start empty, and a drained queue is a dead end for
+# visitors - so whenever nothing is pending, offer a (re)run that resets first.
 if not audit.all_email_ids():
     st.info("No data yet - this instance starts empty. Process the demo inbox to see the agent work.")
-    if st.button("Run demo inbox (5 sample emails)", type="primary"):
-        with st.spinner("Classifying, enriching, and routing 5 emails... (~30s)"):
-            done, paused = _run_demo_inbox()
-        st.success(f"Processed 5 emails: {done} auto-resolved, {paused} awaiting your approval below.")
-        st.rerun()
+    _demo_label = "Run demo inbox (5 sample emails)"
+elif not queue_index.load():
+    st.info("Demo complete - the approval queue is empty. Reset and run it again to watch the agent work.")
+    _demo_label = "Reset & run demo inbox"
+else:
+    _demo_label = None
+
+if _demo_label and st.button(_demo_label, type="primary"):
+    with st.spinner("Classifying, enriching, and routing 5 emails... (~30s)"):
+        _reset_demo_state()
+        done, paused = _run_demo_inbox()
+    st.success(f"Processed 5 emails: {done} auto-resolved, {paused} awaiting your approval below.")
+    st.rerun()
 
 # Result banner from the most recent approve/reject (survives the rerun).
 if "last_result" in st.session_state:

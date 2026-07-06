@@ -3,15 +3,15 @@ anthropic
 pydantic>=2
 python-dotenv
 langgraph
-langgraph-checkpoint-sqlite   # Day 9 durable human-in-the-loop
+langgraph-checkpoint-sqlite   # durable human-in-the-loop checkpoints
 
-# RAG (Day 6) - local embeddings backend (default)
+# Policy RAG - local embeddings backend (default)
 sentence-transformers
 numpy
 
-# RAG (Day 6) - API embeddings backend (only if EMBEDDINGS=voyage)
+# Policy RAG - API embeddings backend (only if EMBEDDINGS=voyage)
 # voyageai
 
-# Dashboard (Days 11-13)
+# Dashboard
 streamlit
 # pandas

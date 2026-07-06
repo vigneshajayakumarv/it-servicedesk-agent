@@ -1,4 +1,4 @@
-"""Day 10: print the full audit trail per email, plus a summary.
+"""Print the full audit trail per email, plus a summary.
 Run from the repo root:  python scripts/audit_report.py
 """
 import sys, os

@@ -107,7 +107,7 @@ def create_ticket(email: IncomingEmail, classification: Classification) -> str:
 
 
 def escalate(email: IncomingEmail, classification: Classification, reason: str) -> str:
-    """Queue the item for a human. This JSONL file is the HITL approval queue (wired Day 9)."""
+    """Queue the item for a human (legacy JSONL path; the graph now pauses via checkpoints)."""
     entry = {
         "email_id": email.id,
         "requester": email.sender,

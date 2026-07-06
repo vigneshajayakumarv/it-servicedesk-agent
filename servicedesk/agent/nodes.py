@@ -1,4 +1,4 @@
-"""LangGraph nodes (Day 10: durable HITL + audit trail).
+"""LangGraph nodes: durable human-in-the-loop + audit trail.
 
 State carries plain dicts/strings (checkpoint-safe). Each agent decision is written to
 the append-only audit log in the node where it runs exactly once. The escalation event

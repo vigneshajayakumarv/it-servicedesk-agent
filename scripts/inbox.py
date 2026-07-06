@@ -1,4 +1,4 @@
-"""Durable HITL inbox CLI (Day 9-10).
+"""Durable human-in-the-loop inbox CLI.
 
   python scripts/inbox.py run            process the inbox; auto-resolve safe items, PAUSE the rest
   python scripts/inbox.py queue          list items awaiting human approval

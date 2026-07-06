@@ -1,6 +1,6 @@
-"""Day 5 check: resolve each sample email's sender against the directory.
-DONE WHEN: known senders return full records (Rita shows account=locked),
-and an unknown address returns None.
+"""Directory tool demo: resolve each sample email's sender against the mock directory.
+Expected: known senders return full records (Rita shows account=locked);
+an unknown address returns None.
 
 Run from the repo root:  python scripts/lookup_demo.py
 """

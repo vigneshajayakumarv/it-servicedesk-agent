@@ -1,5 +1,5 @@
-"""Day 6 check: build the policy index, then run a few queries through the RAG tool.
-DONE WHEN: build reports N chunks, and each query returns a relevant policy snippet.
+"""Policy RAG demo: build the policy index, then run a few queries through it.
+Expected: the build reports the chunk count, and each query returns a relevant policy snippet.
 
 Run from the repo root:  python scripts/policy_demo.py
 """

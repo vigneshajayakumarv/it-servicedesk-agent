@@ -1,5 +1,5 @@
-"""Day 1 check. Loads the sample emails, runs each through the classifier, prints the result.
-DONE WHEN: this prints a parsed Classification (category + confidence) for each email.
+"""Smoke test: loads the sample emails, runs each through the classifier, prints the result.
+Expected: a parsed Classification (category + confidence) printed for each email.
 
 Run from the repo root:  python scripts/hello_llm.py
 """

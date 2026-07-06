@@ -1,4 +1,4 @@
-"""Where emails come from. Day 1: read JSON fixtures. Later: swap in Microsoft Graph.
+"""Where emails come from: JSON fixtures for the demo; swap in Microsoft Graph for production.
 Malformed records are skipped with a warning so one bad row can't kill a batch."""
 from __future__ import annotations
 import json

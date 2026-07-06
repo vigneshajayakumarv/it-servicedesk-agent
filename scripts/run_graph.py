@@ -1,4 +1,6 @@
-"""Day 3 runner: load the sample emails, run each through the real graph, print routing.
+"""Minimal graph runner: classify each sample email inside the graph and print routing.
+Expected: every email is classified by the LLM inside the graph and routed to auto/human.
+
 Run from the repo root:  python scripts/run_graph.py
 """
 import sys, os

@@ -1,5 +1,5 @@
 """Print a Mermaid diagram of the compiled graph. Paste the output into
-https://mermaid.live to see the flow. (Seeds the Day 15 architecture diagram.)
+https://mermaid.live to see the flow.
 
 Run:  python scripts/draw_graph.py
 """

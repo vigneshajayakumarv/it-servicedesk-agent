@@ -1,5 +1,5 @@
 """Confidence gate + human-in-the-loop routing. This is the enterprise-grade bit.
-Day 9 refines the rules; this first pass already captures the core idea."""
+Two independent rules: high-stakes categories always go to a human; low confidence does too."""
 from . import config
 from .schema import Classification, TicketCategory
 

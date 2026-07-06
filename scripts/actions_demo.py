@@ -1,6 +1,6 @@
-"""Day 7 check: run sample emails through classify + the gate, then take action.
+"""Action tools demo: run sample emails through classify + the gate, then take action.
 Auto items get a grounded draft + a ticket; human items get escalated.
-DONE WHEN: outbox/*.txt drafts appear, tickets land in tickets.db, escalations
+Expected: outbox/*.txt drafts appear, tickets land in tickets.db, escalations
 land in pending_queue.jsonl.
 
 Run from the repo root:  python scripts/actions_demo.py
