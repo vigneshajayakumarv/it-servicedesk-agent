@@ -2,7 +2,7 @@
 
 An AI agent that triages an IT helpdesk inbox end to end — and knows when *not* to act.
 
-**[Live demo](https://it-servicedesk-agent-brvydxdbutibzchgwjup9y.streamlit.app/)** — click "Run demo inbox", watch it classify 5 emails, then approve or reject the ones it escalated to you.
+**[Live demo](https://it-servicedesk-agent-brvydxdbutibzchgwjup9y.streamlit.app/)** — click "Reset & run demo inbox", watch it classify 5 emails, then approve or reject the ones it escalated to you.
 
 An email comes in. The agent reads it, classifies it, looks up the sender in the employee
 directory, checks company policy, and then either resolves it — drafting a grounded reply
